@@ -27,8 +27,15 @@ h2 {
     text-transform: uppercase;
     font-size: 70px;
 }
-.box:focus {
+.green {
     background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.black {
+    background-color: black;
 }
 .text {
     margin: auto;
