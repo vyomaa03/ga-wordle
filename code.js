@@ -27,7 +27,6 @@ button.addEventListener("click", function(){
             greenWords.push(row[i].value);
             console.log(greenWords.value); // making sure that these blocks habe been added to this array 
         } 
-        
         else {
             row[i].classList.add("black")
             checkWords.push(row[i].value);
@@ -37,7 +36,3 @@ button.addEventListener("click", function(){
 })
 // check if there is a change in the input and then have it run the second function.    
 
-
-
-
-// check if there is a change in the input and then have it run the second function.    
