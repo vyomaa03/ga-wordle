@@ -38,8 +38,14 @@ for (let i = 0; i < letter.length; i++) {
         checkLetters[i] = capsGuess[i] 
         checkLetters2[i] = capsTestWord[i] 
     }
-    
 }
+
+console.log(greenCounter)
+    if (greenCounter == 5){
+        console.log("done")
+    }else{
+        greenCounter = 1;
+    }
  for (i in checkLetters) {
      if(checkLetters[i] == "") {
          continue
@@ -54,16 +60,23 @@ console.log(rowCounter);
 let newRow = ("row" + rowCounter)
 row = document.querySelectorAll("." + newRow);
 console.log(row)
-if (rowCounter > 6){
+if (greenCounter == 5){
+    
 }
+if (rowCounter >= 6 && greenCounter < 5){
+    prompt("You did not guess " + testWord + " in time.")
+} 
 // I need to make sure that this whole function stops when the number of rows
 //reaches 6 but idk if putting a if loop is the best solution. 
 }) 
 
-if (greenCounter == 5) {
-    prompt("Congrats you guessed " + testWord + " correctly");
-}
+if (rowCounter > 6 && greenCounter < 6){
+    console.log("You did not guess " + testWord + " in time.")
+} 
 
+
+
+}) 
 
 /* okay so now I need the code to stop at 2 instances
 1. Where the number of greens has become 5 regardless of the number of rows
