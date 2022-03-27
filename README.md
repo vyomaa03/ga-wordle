@@ -4,7 +4,7 @@ Wordle is a web-based word game created and developed by Welsh software engineer
 
 This project is an attempt to ustilise the knowladge thart I have gained thus far to create this addictive game!
 
-The project can be found and played through this link
+The project can be found and played through this [link](https://vyomaa03.github.io/ga-wordle/)
 
 
 ## V-ordle 
