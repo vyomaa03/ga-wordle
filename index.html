@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>V-ordle</h2>
+    <div id="navbar">
+        <ul>
+            <li id="page_heading"><a>Vordle</a></li>
+            <li><a>About</a></li>
+            <li><a>Score</a></li>
+        </ul>
+    </div>
   <section class="text">
         <label for="word">Enter your word</label> <br>
         <input name="word" type="text"></input>
@@ -48,7 +54,11 @@
     </div> <br>
   
     <footer>By Vyomaa Bhaskar</footer>
-
     <script src="newWordle.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", setTimeout ( 
+        alert("Click ok to see what had loaded!"), 2000)
+    )
+    </script>
 </body>
 </html>
