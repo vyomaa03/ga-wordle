@@ -56,9 +56,14 @@
     <footer>By Vyomaa Bhaskar</footer>
     <script src="newWordle.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", setTimeout ( 
-        alert("Click ok to see what had loaded!"), 2000)
-    )
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                let message = document.createElement("div")
+                message.textContent = "This is a message!"
+                message.id = "message"
+                document.body.appendChild(message);
+            }, 10000)
+        });
     </script>
 </body>
 </html>
