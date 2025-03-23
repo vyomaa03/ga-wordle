@@ -12,6 +12,22 @@ body {
   min-height: 100vh;
 }
 
+/* Letter Colors */
+.green {
+  background-color: #c7db9c;
+  color: white;
+}
+
+.yellow {
+  background-color: #f8ed8c;
+  color: black;
+}
+
+.gray {
+  background-color: #dbdbdb;
+  color: white;
+}
+
 /* Vordle Header Div*/
 #header {
   text-align: center;
@@ -108,7 +124,6 @@ button:hover {
   font-size: clamp(24px, 5vw, 36px);
   font-weight: bold;
   color: #504b38;
-  background-color: #ebe5c2;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
