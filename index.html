@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>V-ordle</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h2>V-ordle</h2>
-    <section class="text">
-        <label for="word">Enter your word</label> <br>
-        <input name="word" type="text"></input>
-        <button id="Submit">Submit</button>
-    </section> <br>
-    <div id="container"></div> <br>
-  
-    <footer>By Vyomaa Bhaskar</footer>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h3>Vordle</h3>
+      <p>Guess the 5-letter word</p>
+    </div>
+    <div id="input-container">
+      <input
+        type="text"
+        id="guessInput"
+        placeholder="Enter your word"
+        maxlength="5"
+      />
+      <button id="submitGuess">Submit</button>
+    </div>
+    <div id="container">
+      <script src="gridGeneration.js"></script>
+    </div>
+    <p id="instructions">By Vyomaa Bhaskar</p>
     <script src="newWordle.js"></script>
-    <script src="gridGeneration.js"></script>
-</body>
+  </body>
 </html>
