@@ -16,11 +16,3 @@ This game is a recreation of the same gameplay created by Josh Wardle. This vers
 * Each guess must be a five letter word.
 * Click the submit button and watch for the change of color
 * After each guess the background color of your letters changes   according to the guidelines below.
-
-
-
-Letter colors:
-* Green: The letter is in the word and in the correct spot
-* Yellow: The letter is in the word but in the wrong spot
-* Grey: The letter is not in the word in any spot
-
