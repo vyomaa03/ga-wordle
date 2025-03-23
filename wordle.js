@@ -1,10 +1,32 @@
-let testWord = ["g", "r", "e", "e", "n"];
+const validWords = [
+  "apple",
+  "grape",
+  "peach",
+  "berry",
+  "melon",
+  "lemon",
+  "mango",
+  "cherry",
+  "plums",
+  "pears",
+];
+
+let testWord = [];
 let button = document.getElementById("submitGuess");
 let elements = document.getElementById("guessInput"); // The input field
 let rowCounter = 1; // To keep track of the row number (turn)
 let greenCounter = 0; // To count the number of green letters (correct positions)
 let maxRows = 6; // Max rows (attempts)
 let gameOver = false;
+
+// Fetch a random word from the valid words list
+function fetchRandomWord() {
+  testWord =
+    validWords[Math.floor(Math.random() * validWords.length)].split("");
+}
+
+// Initialize the game by fetching a random word
+fetchRandomWord();
 
 button.addEventListener("click", function () {
   // If the game is over, stop accepting guesses
@@ -74,7 +96,7 @@ button.addEventListener("click", function () {
     // If all letters are correct (green), the player wins
     setTimeout(function () {
       alert("Congratulations! You guessed today's word.");
-    }, 100);
+    }, 600);
     gameOver = true;
   } else {
     // Move to the next row/turn
@@ -84,7 +106,7 @@ button.addEventListener("click", function () {
     if (rowCounter > maxRows) {
       setTimeout(function () {
         alert("Game over! Better luck next time.");
-      }, 100);
+      }, 600);
       gameOver = true;
     }
   }
